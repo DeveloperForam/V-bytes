@@ -4440,3 +4440,17 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+//popup box
+function openPopup() {
+  document.getElementById("popupModal").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popupModal").style.display = "none";
+}
+
+function register() {
+  alert("Thank you for registering!");
+}
+
