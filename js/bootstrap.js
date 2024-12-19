@@ -4441,8 +4441,13 @@
 }));
 //# sourceMappingURL=bootstrap.js.map
 
-//popup box
-function openPopup() {
+function openPopup(title, description, action) {
+  // Set the title, description, and button action dynamically
+  document.getElementById("popupTitle").innerText = title;
+  document.getElementById("popupDescription").innerText = description;
+  document.getElementById("popupButton").setAttribute("onclick", action);
+
+  // Display the modal
   document.getElementById("popupModal").style.display = "block";
 }
 
@@ -4450,7 +4455,43 @@ function closePopup() {
   document.getElementById("popupModal").style.display = "none";
 }
 
-function register() {
-  alert("Thank you for registering!");
+// Game-specific registration actions
+function GooglerRegister() {
+  alert("You have registered for Game 1!");
+  closePopup();
 }
 
+function QuizzardRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function BlindCodeRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function BugBountyRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function CodeWarRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function ReelmakingRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function GenAiRegister() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
+
+function JumanjiRegistration() {
+  alert("You have registered for Game 2!");
+  closePopup();
+}
